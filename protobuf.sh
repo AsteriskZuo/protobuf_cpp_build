@@ -1,0 +1,121 @@
+# /bin/sh
+
+# ref: cmake/libprotobuf.cmake
+
+protobuf_root_dir="/Users/zuoyu/Downloads/protobuf-3.17.3"
+protobuf_source_dir=${protobuf_root_dir}
+out_dir=./libprotobuf_3173
+
+mkdir -p ${out_dir}/src/google/protobuf/util/internal
+mkdir -p ${out_dir}/src/google/protobuf/compiler
+mkdir -p ${out_dir}/src/google/protobuf/io
+mkdir -p ${out_dir}/src/google/protobuf/stubs
+mkdir -p ${out_dir}/include/google/protobuf/util/internal
+mkdir -p ${out_dir}/include/google/protobuf/compiler
+mkdir -p ${out_dir}/include/google/protobuf/io
+mkdir -p ${out_dir}/include/google/protobuf/stubs
+
+ cp ${protobuf_source_dir}/src/google/protobuf/any.cc ${out_dir}/src/google/protobuf/any.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/any.pb.cc ${out_dir}/src/google/protobuf/any.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/api.pb.cc ${out_dir}/src/google/protobuf/api.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/compiler/importer.cc ${out_dir}/src/google/protobuf/compiler/importer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/compiler/parser.cc ${out_dir}/src/google/protobuf/compiler/parser.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor.cc ${out_dir}/src/google/protobuf/descriptor.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor.pb.cc ${out_dir}/src/google/protobuf/descriptor.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor_database.cc ${out_dir}/src/google/protobuf/descriptor_database.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/duration.pb.cc ${out_dir}/src/google/protobuf/duration.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/dynamic_message.cc ${out_dir}/src/google/protobuf/dynamic_message.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/empty.pb.cc ${out_dir}/src/google/protobuf/empty.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/extension_set_heavy.cc ${out_dir}/src/google/protobuf/extension_set_heavy.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/field_mask.pb.cc ${out_dir}/src/google/protobuf/field_mask.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/generated_message_reflection.cc ${out_dir}/src/google/protobuf/generated_message_reflection.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/generated_message_table_driven.cc ${out_dir}/src/google/protobuf/generated_message_table_driven.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/io/gzip_stream.cc ${out_dir}/src/google/protobuf/io/gzip_stream.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/io/printer.cc ${out_dir}/src/google/protobuf/io/printer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/io/tokenizer.cc ${out_dir}/src/google/protobuf/io/tokenizer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/map_field.cc ${out_dir}/src/google/protobuf/map_field.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/message.cc ${out_dir}/src/google/protobuf/message.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/reflection_ops.cc ${out_dir}/src/google/protobuf/reflection_ops.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/service.cc ${out_dir}/src/google/protobuf/service.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/source_context.pb.cc ${out_dir}/src/google/protobuf/source_context.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/struct.pb.cc ${out_dir}/src/google/protobuf/struct.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/stubs/substitute.cc ${out_dir}/src/google/protobuf/stubs/substitute.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/text_format.cc ${out_dir}/src/google/protobuf/text_format.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/timestamp.pb.cc ${out_dir}/src/google/protobuf/timestamp.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/type.pb.cc ${out_dir}/src/google/protobuf/type.pb.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/unknown_field_set.cc ${out_dir}/src/google/protobuf/unknown_field_set.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/delimited_message_util.cc ${out_dir}/src/google/protobuf/util/delimited_message_util.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/field_comparator.cc ${out_dir}/src/google/protobuf/util/field_comparator.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/field_mask_util.cc ${out_dir}/src/google/protobuf/util/field_mask_util.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/datapiece.cc ${out_dir}/src/google/protobuf/util/internal/datapiece.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/default_value_objectwriter.cc ${out_dir}/src/google/protobuf/util/internal/default_value_objectwriter.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/error_listener.cc ${out_dir}/src/google/protobuf/util/internal/error_listener.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/field_mask_utility.cc ${out_dir}/src/google/protobuf/util/internal/field_mask_utility.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_escaping.cc ${out_dir}/src/google/protobuf/util/internal/json_escaping.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_objectwriter.cc ${out_dir}/src/google/protobuf/util/internal/json_objectwriter.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_stream_parser.cc ${out_dir}/src/google/protobuf/util/internal/json_stream_parser.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/object_writer.cc ${out_dir}/src/google/protobuf/util/internal/object_writer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/proto_writer.cc ${out_dir}/src/google/protobuf/util/internal/proto_writer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/protostream_objectsource.cc ${out_dir}/src/google/protobuf/util/internal/protostream_objectsource.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/protostream_objectwriter.cc ${out_dir}/src/google/protobuf/util/internal/protostream_objectwriter.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/type_info.cc ${out_dir}/src/google/protobuf/util/internal/type_info.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/type_info_test_helper.cc ${out_dir}/src/google/protobuf/util/internal/type_info_test_helper.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/utility.cc ${out_dir}/src/google/protobuf/util/internal/utility.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/json_util.cc ${out_dir}/src/google/protobuf/util/json_util.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/message_differencer.cc ${out_dir}/src/google/protobuf/util/message_differencer.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/time_util.cc ${out_dir}/src/google/protobuf/util/time_util.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/util/type_resolver_util.cc ${out_dir}/src/google/protobuf/util/type_resolver_util.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/wire_format.cc ${out_dir}/src/google/protobuf/wire_format.cc
+ cp ${protobuf_source_dir}/src/google/protobuf/wrappers.pb.cc ${out_dir}/src/google/protobuf/wrappers.pb.cc
+
+ cp ${protobuf_source_dir}/src/google/protobuf/any.h ${out_dir}/include/google/protobuf/any.h
+ cp ${protobuf_source_dir}/src/google/protobuf/any.pb.h ${out_dir}/include/google/protobuf/any.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/api.pb.h ${out_dir}/include/google/protobuf/api.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/compiler/importer.h ${out_dir}/include/google/protobuf/compiler/importer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/compiler/parser.h ${out_dir}/include/google/protobuf/compiler/parser.h
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor.h ${out_dir}/include/google/protobuf/descriptor.h
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor.pb.h ${out_dir}/include/google/protobuf/descriptor.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/descriptor_database.h ${out_dir}/include/google/protobuf/descriptor_database.h
+ cp ${protobuf_source_dir}/src/google/protobuf/duration.pb.h ${out_dir}/include/google/protobuf/duration.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/dynamic_message.h ${out_dir}/include/google/protobuf/dynamic_message.h
+ cp ${protobuf_source_dir}/src/google/protobuf/empty.pb.h ${out_dir}/include/google/protobuf/empty.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/field_access_listener.h ${out_dir}/include/google/protobuf/field_access_listener.h
+ cp ${protobuf_source_dir}/src/google/protobuf/field_mask.pb.h ${out_dir}/include/google/protobuf/field_mask.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/generated_message_reflection.h ${out_dir}/include/google/protobuf/generated_message_reflection.h
+ cp ${protobuf_source_dir}/src/google/protobuf/io/gzip_stream.h ${out_dir}/include/google/protobuf/io/gzip_stream.h
+ cp ${protobuf_source_dir}/src/google/protobuf/io/printer.h ${out_dir}/include/google/protobuf/io/printer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/io/tokenizer.h ${out_dir}/include/google/protobuf/io/tokenizer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/map_field.h ${out_dir}/include/google/protobuf/map_field.h
+ cp ${protobuf_source_dir}/src/google/protobuf/message.h ${out_dir}/include/google/protobuf/message.h
+ cp ${protobuf_source_dir}/src/google/protobuf/reflection_ops.h ${out_dir}/include/google/protobuf/reflection_ops.h
+ cp ${protobuf_source_dir}/src/google/protobuf/service.h ${out_dir}/include/google/protobuf/service.h
+ cp ${protobuf_source_dir}/src/google/protobuf/source_context.pb.h ${out_dir}/include/google/protobuf/source_context.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/struct.pb.h ${out_dir}/include/google/protobuf/struct.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/stubs/substitute.h ${out_dir}/include/google/protobuf/stubs/substitute.h
+ cp ${protobuf_source_dir}/src/google/protobuf/text_format.h ${out_dir}/include/google/protobuf/text_format.h
+ cp ${protobuf_source_dir}/src/google/protobuf/timestamp.pb.h ${out_dir}/include/google/protobuf/timestamp.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/type.pb.h ${out_dir}/include/google/protobuf/type.pb.h
+ cp ${protobuf_source_dir}/src/google/protobuf/unknown_field_set.h ${out_dir}/include/google/protobuf/unknown_field_set.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/delimited_message_util.h ${out_dir}/include/google/protobuf/util/delimited_message_util.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/field_comparator.h ${out_dir}/include/google/protobuf/util/field_comparator.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/field_mask_util.h ${out_dir}/include/google/protobuf/util/field_mask_util.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/datapiece.h ${out_dir}/include/google/protobuf/util/internal/datapiece.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/default_value_objectwriter.h ${out_dir}/include/google/protobuf/util/internal/default_value_objectwriter.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/error_listener.h ${out_dir}/include/google/protobuf/util/internal/error_listener.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/field_mask_utility.h ${out_dir}/include/google/protobuf/util/internal/field_mask_utility.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_escaping.h ${out_dir}/include/google/protobuf/util/internal/json_escaping.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_objectwriter.h ${out_dir}/include/google/protobuf/util/internal/json_objectwriter.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/json_stream_parser.h ${out_dir}/include/google/protobuf/util/internal/json_stream_parser.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/object_writer.h ${out_dir}/include/google/protobuf/util/internal/object_writer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/proto_writer.h ${out_dir}/include/google/protobuf/util/internal/proto_writer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/protostream_objectsource.h ${out_dir}/include/google/protobuf/util/internal/protostream_objectsource.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/protostream_objectwriter.h ${out_dir}/include/google/protobuf/util/internal/protostream_objectwriter.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/type_info.h ${out_dir}/include/google/protobuf/util/internal/type_info.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/type_info_test_helper.h ${out_dir}/include/google/protobuf/util/internal/type_info_test_helper.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/internal/utility.h ${out_dir}/include/google/protobuf/util/internal/utility.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/json_util.h ${out_dir}/include/google/protobuf/util/json_util.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/message_differencer.h ${out_dir}/include/google/protobuf/util/message_differencer.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/time_util.h ${out_dir}/include/google/protobuf/util/time_util.h
+ cp ${protobuf_source_dir}/src/google/protobuf/util/type_resolver_util.h ${out_dir}/include/google/protobuf/util/type_resolver_util.h
+ cp ${protobuf_source_dir}/src/google/protobuf/wire_format.h ${out_dir}/include/google/protobuf/wire_format.h
+ cp ${protobuf_source_dir}/src/google/protobuf/wrappers.pb.h ${out_dir}/include/google/protobuf/wrappers.pb.h
